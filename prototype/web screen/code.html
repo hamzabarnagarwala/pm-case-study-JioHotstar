@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }
+.jiohotstar-gradient {
+  background: linear-gradient(108deg, #00A8FF 0%, #0077FE 28%, #7C3AED 68%, #D946EF 88%, #FF0080 100%);
+}
+.jiohotstar-gradient-text {
+  background: linear-gradient(108deg, #00A8FF 0%, #0077FE 28%, #7C3AED 68%, #D946EF 88%, #FF0080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.jiohotstar-border-gradient {
+  border-image: linear-gradient(108deg, #00A8FF, #7C3AED, #FF0080) 1;
+}
+.jiohotstar-glow {
+  box-shadow: 0 0 32px rgba(124, 58, 237, 0.45), 0 0 16px rgba(0, 168, 255, 0.35);
+}
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#131929", "inverse-surface": "#dfe1f6", "inverse-primary": "#00677d", "error-container": "#93000a", "secondary-fixed": "#ffd6fd", "background": "#070B16", "on-secondary-fixed-variant": "#7c008e", "on-primary-container": "#00414f", "tertiary": "#ffb0cd", "primary-fixed-dim": "#4cd6fb", "surface-bright": "#222c42", "outline": "#48536b", "surface-container-low": "#0d1322", "on-secondary": "#ffffff", "inverse-on-surface": "#2c303f", "surface-container-high": "#1a2236", "on-primary-fixed": "#001f27", "secondary-container": "#7C3AED", "surface-dim": "#070B16", "on-secondary-container": "#ffd8fd", "primary-fixed": "#b3ebff", "secondary": "#D946EF", "surface-container-highest": "#232e47", "error": "#ffb4ab", "on-primary-fixed-variant": "#004e5f", "tertiary-container": "#FF0080", "on-secondary-fixed": "#36003e", "primary-container": "#0077FE", "on-surface-variant": "#94a3b8", "surface-tint": "#00A8FF", "on-tertiary-fixed-variant": "#004395", "surface-container-lowest": "#050811", "on-tertiary-container": "#ffffff", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-surface": "#f8fafc", "primary": "#00A8FF", "secondary-fixed-dim": "#fbabff", "outline-variant": "#2a3449", "on-tertiary-fixed": "#001a42", "surface": "#070B16", "surface-variant": "#1c253b", "tertiary-fixed-dim": "#adc6ff", "on-error-container": "#ffdad6", "on-error": "#690005", "tertiary-fixed": "#d8e2ff", "on-background": "#f8fafc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "gutter": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-[#070B16] font-body-md text-body-md text-[#f8fafc] antialiased selection:bg-[#D946EF] selection:text-white"><aside class="fixed left-0 top-0 h-full w-64 bg-[#050811]/95 border-r border-white/[0.06] backdrop-blur-2xl z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_16px_rgba(0,0,0,0.6)]"><div class="flex flex-col gap-6"><!-- Authentic JioHotstar SVG Brand Lockup matching reference image -->
+<div class="px-2 py-2 flex items-center">
+<a class="flex items-center gap-2.5 group" href="#">
+<div class="relative w-10 h-10 flex-shrink-0 flex items-center justify-center">
+<!-- Starburst Glow -->
+<div class="absolute inset-0 bg-gradient-to-tr from-cyan-400/40 via-violet-500/30 to-pink-500/40 rounded-full blur-md group-hover:scale-125 transition-transform duration-500"></div>
+<svg class="relative w-9 h-9 drop-shadow-[0_2px_8px_rgba(255,215,0,0.35)]" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="starMetalLight" x1="20" x2="80" y1="20" y2="80">
+<stop offset="0%" stop-color="#FFFFFF"></stop>
+<stop offset="45%" stop-color="#F1F5F9"></stop>
+<stop offset="70%" stop-color="#CBD5E1"></stop>
+<stop offset="100%" stop-color="#94A3B8"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="goldEdge" x1="0" x2="100" y1="0" y2="100">
+<stop offset="0%" stop-color="#FFE082"></stop>
+<stop offset="50%" stop-color="#DAA520"></stop>
+<stop offset="100%" stop-color="#8B6508"></stop>
+</lineargradient>
+</defs>
+<!-- Gold Rim Contour of 8-point asymmetric Star -->
+<polygon fill="url(#goldEdge)" filter="drop-shadow(0 0 2px rgba(218,165,32,0.6))" points="50,4 56,38 96,28 62,49 84,82 52,60 22,86 38,50 8,42 42,38"></polygon>
+<!-- Polished Platinum-Chrome Facets -->
+<polygon fill="#FFFFFF" points="50,6 54,39 50,48 44,39"></polygon>
+<polygon fill="url(#starMetalLight)" points="94,29 61,48 50,48 55,39"></polygon>
+<polygon fill="#E2E8F0" points="82,80 52,58 50,48 61,48"></polygon>
+<polygon fill="#CBD5E1" points="23,84 40,51 50,48 52,58"></polygon>
+<polygon fill="#FFFFFF" points="10,43 41,39 50,48 40,51"></polygon>
+<polygon fill="#94A3B8" points="50,6 44,39 50,48"></polygon>
+<!-- Central Brilliant Sparkle Core -->
+<circle cx="50" cy="48" fill="#FFFFFF" filter="drop-shadow(0 0 4px #FFFFFF)" r="3.5"></circle>
+</svg>
+</div>
+<span class="text-[23px] font-[800] tracking-tight text-white font-sans flex items-center">
+    Jio<span class="font-extrabold text-white">Hotstar</span>
+</span>
+</a>
+</div><nav class="flex flex-col gap-1.5" data-active-classes="bg-gradient-to-r from-[#0077FE]/20 via-[#7C3AED]/20 to-[#FF0080]/20 border-l-4 border-[#00A8FF] text-white font-bold shadow-[0_0_24px_rgba(0,168,255,0.25)]"><a aria-current="page" class="flex items-center gap-4 px-4 py-3 rounded-xl transition-all bg-gradient-to-r from-[#00A8FF]/25 via-[#7C3AED]/20 to-[#FF0080]/20 border-l-[3px] border-[#00A8FF] text-white font-bold shadow-[0_4px_20px_rgba(0,168,255,0.25)]" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] text-[#00A8FF]" style="font-variation-settings: 'FILL' 1;">home</span><span class="font-label-lg text-label-lg">Home</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="search" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-lg text-label-lg">Search</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="movies" href="#"><span class="material-symbols-outlined text-[22px]">movie</span><span class="font-label-lg text-label-lg">Movies</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="tv-shows" href="#"><span class="material-symbols-outlined text-[22px]">tv</span><span class="font-label-lg text-label-lg">TV Shows</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="sports" href="#"><span class="material-symbols-outlined text-[22px]">sports_cricket</span><span class="font-label-lg text-label-lg">Sports</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="kids" href="#"><span class="material-symbols-outlined text-[22px]">child_care</span><span class="font-label-lg text-label-lg">Kids</span></a></nav></div><div class="flex flex-col gap-1.5 pt-4 border-t border-white/[0.06]"><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="watchlist" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-lg text-label-lg">Watchlist</span></a><a class="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-400 hover:bg-white/[0.05] hover:text-white transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></div></aside><div class="pl-64 min-h-screen flex flex-col bg-[#070B16]"><header class="fixed top-0 left-64 right-0 h-16 z-40 bg-[#070B16]/80 backdrop-blur-xl border-b border-white/[0.06] flex items-center justify-between px-8 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="flex items-center gap-3"><div class="flex items-center gap-2">
+<div class="w-6 h-6 flex items-center justify-center">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 100 100">
+<polygon fill="url(#goldEdge)" points="50,4 56,38 96,28 62,49 84,82 52,60 22,86 38,50 8,42 42,38"></polygon>
+<polygon fill="#FFFFFF" points="50,6 54,39 50,48 44,39"></polygon>
+<polygon fill="#CBD5E1" points="94,29 61,48 50,48 55,39"></polygon>
+<polygon fill="#E2E8F0" points="82,80 52,58 50,48 61,48"></polygon>
+<polygon fill="#94A3B8" points="23,84 40,51 50,48 52,58"></polygon>
+<circle cx="50" cy="48" fill="#FFFFFF" r="3"></circle>
+</svg>
+</div>
+<span class="font-label-lg text-label-lg text-white font-extrabold tracking-tight">Jio<span class="text-white">Hotstar</span></span>
+</div></div><div class="flex items-center gap-4"><button class="w-10 h-10 rounded-full flex items-center justify-center text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-10 h-10 rounded-full flex items-center justify-center text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-[#FF0080] shadow-[0_0_8px_#FF0080]"></span></button><button class="flex items-center gap-2 py-1.5 px-4 rounded-full jiohotstar-gradient text-white font-label-sm text-label-sm font-bold shadow-[0_0_16px_rgba(217,70,239,0.45)] hover:shadow-[0_0_24px_rgba(0,168,255,0.6)] hover:scale-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-[16px]">stars</span><span>Subscribe</span></button></div></header><main class="w-full pt-16 flex-1 bg-[#070B16]"><div class="flex flex-col w-full text-[#f8fafc] overflow-x-hidden selection:bg-[#D946EF] selection:text-white">
+<!-- Atmospheric Signature Gradient Mesh Glows (Reference Palette: Cyan -> Violet -> Fuchsia) -->
+<div class="relative w-full pointer-events-none">
+<div class="absolute -top-24 left-1/4 w-[36rem] h-[36rem] bg-gradient-to-br from-[#00A8FF]/20 via-[#7C3AED]/20 to-transparent rounded-full blur-[140px]"></div>
+<div class="absolute top-40 right-10 w-[32rem] h-[32rem] bg-gradient-to-bl from-[#FF0080]/20 via-[#D946EF]/20 to-transparent rounded-full blur-[150px]"></div>
+</div>
+<!-- HERO BILLBOARD SECTION -->
+<section class="relative w-full px-6 lg:px-10 pt-4 pb-12">
+<!-- Main 16:9 Hero Stage Container with Subtle Ambient Border Glow -->
+<div class="relative w-full rounded-3xl overflow-hidden border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.8)] bg-[#0d1322] min-h-[580px] lg:min-h-[640px] flex items-end">
+<!-- Hero Background Image with Atmospheric Cinema Vignette -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Cinematic wide 16:9 shot of Brahmastra Astraverse fantasy epic with Ranbir Kapoor holding luminous mystical celestial fire weapons surrounded by electric cyan and magenta energy vortexes, swirling golden embers, deep dark cosmic atmosphere, ultra-high definition cinematic lighting with dramatic teal and magenta aura rim lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_XpWVaTBJxBeNJ2l6XofCmt2UABErqGAJLRwYOXoMRq-eabTsKocmSXj1TvtFk0vD5gaWMl48TFTgDgU2E75_DZ0aySgmQsUw6YsHeubFhPTeZ-MJleMJ4aU0DkuVYbU6MdfZOy0LuhkIJs0amx28QyqM0-agl3rKL1oVMyMReNJ55Ri5BX9U2ze6AqEXA1ZBD_-fMaCCFAUncfe3yB3CpWmvBFZDLSOTwal05VU')"></div>
+<!-- Scrims & Gradient Overlays for High Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#070B16] via-[#070B16]/75 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#070B16] via-[#070B16]/65 to-transparent w-full lg:w-3/4"></div>
+<!-- Subtle Signature Accent Rim along top -->
+<div class="absolute top-0 left-0 right-0 h-[2px] jiohotstar-gradient opacity-60"></div>
+<!-- Top Quick Status Floating Bar in Hero -->
+<div class="absolute top-6 left-6 right-6 flex flex-wrap items-center justify-between gap-4 z-20">
+<!-- Family Mode Quick Filter Toggle Switch -->
+<div class="flex items-center gap-3 px-4 py-2 rounded-full bg-[#050811]/85 border border-white/[0.1] backdrop-blur-xl shadow-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D946EF] text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+<span class="font-label-md text-label-md text-white font-semibold tracking-wide">Family Mode</span>
+</div>
+<!-- Toggle Pill with Gradient Fill -->
+<button class="relative inline-flex h-6 w-11 items-center rounded-full jiohotstar-gradient transition-all duration-200 focus:outline-none shadow-[0_0_12px_rgba(217,70,239,0.5)]" id="familyModeBtn" onclick="this.classList.toggle('opacity-50'); this.querySelector('div').classList.toggle('translate-x-5');">
+<div class="inline-block h-4 w-4 transform rounded-full bg-white translate-x-5 transition-transform duration-200 shadow-md"></div>
+</button>
+<span class="text-[11px] font-label-sm text-[#00A8FF] tracking-wider hidden md:inline font-bold uppercase">FILTERS APPLIED: Kid-Safe &amp; Multi-Gen</span>
+</div>
+<!-- 2-Minute Decision Timer Pill -->
+<div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#050811]/80 border border-white/[0.08] backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-[#FF0080] animate-pulse shadow-[0_0_8px_#FF0080]"></span>
+<span class="font-label-sm text-label-sm text-slate-300 font-medium">Quick Pick Mode: Decision Fatigue Buster</span>
+</div>
+</div>
+<!-- Hero Content Info Block -->
+<div class="relative z-10 p-6 md:p-10 lg:p-12 max-w-3xl flex flex-col gap-4">
+<!-- Metadata Badges -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- 98% Match Super-Badge with Hot Neon Styling -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-400 text-slate-950 font-bold font-label-md text-label-md shadow-[0_0_16px_rgba(52,211,153,0.4)]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>98% Match for Family</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-white/[0.1] border border-white/[0.1] text-slate-200 font-label-sm text-label-sm font-semibold tracking-wider">U/A 13+</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.1] border border-white/[0.1] text-[#00A8FF] font-label-sm text-label-sm font-bold">4K UHD</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.1] border border-white/[0.1] text-slate-200 font-label-sm text-label-sm font-semibold">DOLBY ATMOS</span>
+<span class="font-label-md text-label-md text-slate-400">• 2h 47m • Hindi, Tamil, Telugu, Malayalam</span>
+</div>
+<!-- Marquee Title -->
+<div class="flex flex-col gap-1">
+<h1 class="font-display-xl text-display-xl text-white tracking-tight font-extrabold drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
+            Brahmāstra: Part One – Shiva
+          </h1>
+<p class="font-headline-sm text-headline-sm text-[#00A8FF] font-semibold tracking-wide flex items-center gap-2">
+<span>Astraverse</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED]"></span>
+<span>Action</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#D946EF]"></span>
+<span>Mythological Fantasy</span>
+</p>
+</div>
+<!-- Synopsis -->
+<p class="font-body-md text-body-md text-slate-300 max-w-2xl line-clamp-2 md:line-clamp-3 leading-relaxed">
+          A young DJ named Shiva discovers his supernatural connection to the element of fire and holds the power to awaken the Brahmāstra, the ultimate celestial weapon of gods that holds the destiny of humanity.
+        </p>
+<!-- Zero-Click Parental Peace-of-Mind Box -->
+<div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#070B16]/75 border border-white/[0.08] backdrop-blur-xl max-w-xl shadow-lg">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00A8FF]/20 to-[#7C3AED]/20 border border-[#00A8FF]/30 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[#00A8FF] text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-white font-bold">Safe for All Ages Co-Viewing</span>
+<span class="font-body-sm text-body-sm text-slate-300">Clean comedic timing, thrilling non-graphic mythology action, verified zero explicit scenes.</span>
+</div>
+</div>
+<!-- Hero Primary Action Buttons with JioHotstar Gradient -->
+<div class="flex flex-wrap items-center gap-3.5 pt-2">
+<!-- Primary Vibrant Cyan to Magenta Action Button with Ambient Glow -->
+<button class="flex items-center gap-3 px-8 py-3.5 rounded-full jiohotstar-gradient text-white font-label-lg text-label-lg font-bold shadow-[0_0_28px_rgba(0,168,255,0.45),0_0_24px_rgba(255,0,128,0.35)] hover:shadow-[0_0_40px_rgba(217,70,239,0.7)] hover:scale-[1.03] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Quick Play Now</span>
+</button>
+<!-- Watchlist Secondary Button with Glassmorphism -->
+<button class="flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white/[0.08] hover:bg-white/[0.14] border border-white/[0.12] text-white font-label-lg text-label-lg font-semibold backdrop-blur-xl transition-all hover:scale-[1.02]">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Family Watchlist</span>
+</button>
+<!-- Match Insights Modal Trigger -->
+<button class="flex items-center gap-2 px-4 py-3.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.06] text-slate-300 hover:text-white font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[20px] text-[#D946EF]">psychology_alt</span>
+<span>Why This Match?</span>
+</button>
+</div>
+</div>
+<!-- Quick Channel Ribbon Indicator Bottom Right -->
+<div class="absolute bottom-6 right-6 hidden xl:flex items-center gap-3 px-4 py-2.5 rounded-xl bg-[#050811]/85 border border-white/[0.08] backdrop-blur-xl shadow-xl">
+<span class="text-[#D946EF] font-bold font-label-sm text-label-sm tracking-wider uppercase">Audio Available</span>
+<div class="flex items-center gap-1.5 text-white text-label-sm font-medium">
+<span class="px-2 py-0.5 rounded bg-white/[0.08] border border-white/[0.05]">EN 5.1</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.08] border border-white/[0.05]">HI Original</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.08] border border-white/[0.05]">TA</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.08] border border-white/[0.05]">TE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MOOD & VIBE DISCOVERY ROW (Horizontal Zero-Fatigue Navigation) -->
+<section class="w-full px-6 lg:px-10 py-2">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#00A8FF] text-[20px]">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm text-white font-bold">Pick in Under 60 Seconds</span>
+</div>
+<span class="font-label-sm text-label-sm text-slate-400 font-medium">Curated for 2 Adults + 2 Kids Profile</span>
+</div>
+<!-- Scrollable Mood Pills -->
+<div class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+<!-- Active Mood Chip with Signature Cyan-to-Magenta gradient highlight -->
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full jiohotstar-gradient text-white font-label-md text-label-md font-bold shadow-[0_0_24px_rgba(124,58,237,0.45)] hover:scale-105 transition-transform">
+<span>✨</span>
+<span>Family Night Picks</span>
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 hover:text-white font-label-md text-label-md font-medium transition-all">
+<span>⚡</span>
+<span>Quick 30-Min Catchup</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 hover:text-white font-label-md text-label-md font-medium transition-all">
+<span>🍿</span>
+<span>Weekend Blockbusters</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 hover:text-white font-label-md text-label-md font-medium transition-all">
+<span>🏏</span>
+<span>Live Cricket Fever</span>
+<span class="px-1.5 py-0.2 rounded bg-[#FF0080] text-white text-[10px] font-bold shadow-[0_0_8px_#FF0080]">LIVE</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 hover:text-white font-label-md text-label-md font-medium transition-all">
+<span>😂</span>
+<span>Stress Buster Comedy</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 hover:text-white font-label-md text-label-md font-medium transition-all">
+<span>🧠</span>
+<span>Documentary &amp; Wonder</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CONTENT RAIL 1: PERFECT FOR FAMILY NIGHT (Zero-Click Match Badges) -->
+<section class="w-full px-6 lg:px-10 pt-8 pb-4">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2.5">
+<span class="text-xl">👨‍👩‍👧‍👦</span>
+<h2 class="font-headline-md text-headline-md text-white font-bold">Perfect for Family Night</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#00A8FF]/20 to-[#7C3AED]/20 border border-[#00A8FF]/30 text-[#00A8FF] font-label-sm text-label-sm font-semibold">100% G &amp; U/A Rated</span>
+</div>
+<a class="font-label-md text-label-md text-[#00A8FF] hover:text-white flex items-center gap-1 transition-colors" href="#">
+<span>Explore All 24 Titles</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- 16:9 Landscape Card Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Card 1: The Lion King (Hindi) -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-lg hover:shadow-[0_8px_32px_rgba(0,168,255,0.25)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col cursor-pointer">
+<!-- 16:9 Image Box -->
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Photorealistic vibrant African savannah sunset with iconic royal lion cub Simba and father Mufasa standing atop pride rock, warm golden cinematic sunlight blending with cyan sky, epic Disney animation production quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsC1C5KKUQ2FXXY-OdRwChQHIk3nUhSvfC_UofsNuHzuueoxkH890XEPr1ubb5jRA37iRAcZ_6B6lYnWrg69c_7zcQXabi8n3aog-7YycDlpf47EVTxcXR1RxYLhD9ErQD_Un1qboTVsotOoMwzEZcVuigQ6v7e9SnypYE9-R9cjlV4UYkRwSOEd_dStk928YK6QihItYQ8jCXPiwx0b7sh30dTpxZGW-wWeO0cjY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0d1322] via-transparent to-transparent"></div>
+<!-- Kid-Friendly Visual Badge Top Left -->
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md">
+<span class="material-symbols-outlined text-[#D946EF] text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-white font-bold">Family Favorite</span>
+</div>
+<!-- Age Rating Badge Top Right -->
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md text-[11px] font-bold text-slate-300">
+            U (All Ages)
+          </div>
+<!-- Zero-Click Match % Badge Bottom Left -->
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-400 text-slate-950 font-label-sm text-label-sm font-bold shadow-md shadow-emerald-500/40">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-950 animate-ping"></span>
+<span>🟢 97% Match</span>
+</div>
+<!-- Quick Play Hover Overlay Disc -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#070B16]/50 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg shadow-purple-500/50 transform scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Card Meta Info -->
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg font-bold text-white truncate">The Lion King (Hindi)</h3>
+<span class="text-xs text-[#00A8FF] font-semibold">1h 58m</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400 truncate">Shah Rukh Khan, Aryan Khan • Adventure</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Zero Violence</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Musical</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Taare Zameen Par -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-lg hover:shadow-[0_8px_32px_rgba(0,168,255,0.25)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heartwarming scene of young artistic schoolboy smiling with joyful paint splashes on canvas with Aamir Khan art teacher in a brightly lit inspiring classroom, emotional storytelling, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEKocjLc2BVIrLTXX2VK0lKjR5D0MhaWlQxnc3GpBuhOVAFYisfyGxoXE7mo_6SHYFbPYPaUbgasEQchDUPmzApwIbaDkQ4urYWmA72Plu5shYFq6fDVJML8iy7cclItAWLYQmvjU9c7iYUaVlwF8folYJOEVkyZwVyaTi72ZIRoeHU8EPPfUpfNPUc3FMAuxpWB9zahblxGpcBN70x--lW1pr_D8dJnJcdVD9fsA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0d1322] via-transparent to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md">
+<span class="material-symbols-outlined text-[#D946EF] text-[14px]" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+<span class="font-label-sm text-label-sm text-white font-bold">Inspiring Drama</span>
+</div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md text-[11px] font-bold text-slate-300">
+            U (All Ages)
+          </div>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-400 text-slate-950 font-label-sm text-label-sm font-bold shadow-md shadow-emerald-500/40">
+<span>🟢 95% Match</span>
+</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#070B16]/50 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg shadow-purple-500/50 transform scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg font-bold text-white truncate">Taare Zameen Par</h3>
+<span class="text-xs text-[#00A8FF] font-semibold">2h 45m</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400 truncate">Aamir Khan, Darsheel Safary • Drama, Family</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Emotional</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Parenting Must-Watch</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Chhichhore -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-lg hover:shadow-[0_8px_32px_rgba(0,168,255,0.25)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Group of vibrant engineering college hostel friends laughing together and celebrating sports victory in nostalgic Indian college campus setting, lively colors, golden hour backlight, cinematic film still" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjBagPFxar9bSmk05EcwIhULhjvDbCJZPTpqvmLkyWoMBVNM8cRpw-btE8QKQuU-_3wTi_b8fR01BcjgPNvbOpfQWcOMWv_snFZuAv5KSEsnAvDcLJ2GI9M5y_8puKm9wpwTcBMJpHEh5dYOzW3vuWWLQpmqFy3h0jBrezX5SVPD0LfMY-ROAjQ66L2E0kVUZtZimBxMXObwAeXWthwqzYvVeRGOBP1fCm6ShQlgo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0d1322] via-transparent to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md">
+<span class="material-symbols-outlined text-[#D946EF] text-[14px]" style="font-variation-settings: 'FILL' 1;">mood</span>
+<span class="font-label-sm text-label-sm text-white font-bold">Feel Good</span>
+</div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md text-[11px] font-bold text-slate-300">
+            U/A 7+
+          </div>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-400 text-slate-950 font-label-sm text-label-sm font-bold shadow-md shadow-emerald-500/40">
+<span>🟢 94% Match</span>
+</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#070B16]/50 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg shadow-purple-500/50 transform scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg font-bold text-white truncate">Chhichhore</h3>
+<span class="text-xs text-[#00A8FF] font-semibold">2h 23m</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400 truncate">Sushant Singh Rajput, Shraddha Kapoor • Comedy</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Life Lessons</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Friendship</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Modern Love Mumbai -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-lg hover:shadow-[0_8px_32px_rgba(0,168,255,0.25)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cozy warm Mumbai seaside evening with Sea Link bridge lights glowing in background, couple drinking chai on wooden bench under gentle streetlamps, romantic warm pastel tones, modern cinematic drama" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj7B6j_fN6VJKDs3T_B0PdnM-htN8yKhhg_Ak7wEC2xuVKeki0_xT8-AkdkNlyBQUzmqhdXXPTdDcvpf4dvQkVkanz8iwg0Joq2KOSiwWtVZNdAyPMsNHgQWAsEAXRNico8R98ye90_VVFWwfZR_V-O2fDXBDj2VSxfUGzBZajUT3tFqYU-pknj68HNMGPbi2qziSndjneMFxLV7O6d5VOa35d0_7FXH9s_Hz5hP8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0d1322] via-transparent to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md">
+<span class="material-symbols-outlined text-[#D946EF] text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm text-white font-bold">Parent Date Night</span>
+</div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#050811]/85 border border-white/[0.1] backdrop-blur-md text-[11px] font-bold text-slate-300">
+            U/A 13+
+          </div>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-400 text-slate-950 font-label-sm text-label-sm font-bold shadow-md shadow-emerald-500/40">
+<span>🟢 91% Match</span>
+</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#070B16]/50 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg shadow-purple-500/50 transform scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg font-bold text-white truncate">Modern Love Mumbai</h3>
+<span class="text-xs text-[#00A8FF] font-semibold">Anthology • 6 Eps</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400 truncate">Fatima Sana Shaikh, Arshad Warsi • Romance</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Wholesome</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-white/[0.06] text-slate-300 font-medium">Lighthearted</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE HOVER / SHOWCASE EXPERIENCE (PRD Showcase Card) -->
+<section class="w-full px-6 lg:px-10 py-6">
+<div class="flex flex-col gap-2 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D946EF] text-[20px]">smart_display</span>
+<h2 class="font-headline-md text-headline-md text-white font-bold">Smart Preview &amp; Match Transparency</h2>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400">Hover over any title to reveal zero-click AI match rationale without leaving your screen.</p>
+</div>
+<!-- Wide Showcase Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Expanded Interactive Showcase Card (Simulating Active Hover State) with Official Gradient Rim -->
+<div class="lg:col-span-8 rounded-3xl p-[1.5px] jiohotstar-gradient shadow-[0_0_40px_rgba(124,58,237,0.35)] transition-all">
+<div class="w-full h-full rounded-[23px] bg-[#0c1222] p-6 md:p-8 flex flex-col justify-between gap-6 backdrop-blur-2xl">
+<div class="flex flex-col md:flex-row gap-6 items-start">
+<!-- 16:9 Thumbnail -->
+<div class="relative w-full md:w-5/12 aspect-video rounded-2xl overflow-hidden flex-shrink-0 shadow-xl border border-white/[0.1]">
+<img class="w-full h-full object-cover" data-alt="Spectacular mystical action frame of Indian mythological fantasy warrior surrounded by blue thunder lighting, epic cinematic cinematography, ultra-detailed textures, volumetric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6qMuvNZRdPEzs8G3a-aTk1O77cqZXUyEWB3HOX2L3SL7QSJEJQ0akint5DlTlDwEcoHOP2y9XsCLpoQ9CROneYiElCa10Ch-BtaHjw4zJAwl4fnUUv0m1tmGQtPn2EnX93urQVh-SfD-vVZkJhB7kcqY45ImFDunyIV1MOslTCT55Q5uzCg2DAYQ8XGV0A7neLpeXcubMK_IzMKPLWMjh317qWyCKby5dClCYN80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050811]/90 via-transparent to-transparent"></div>
+<!-- Active Play Trigger with JioHotstar Gradient -->
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-14 h-14 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-xl shadow-purple-500/50 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-bold text-label-sm shadow">
+                🟢 96% Match
+              </div>
+</div>
+<!-- Details in Showcase -->
+<div class="flex flex-col gap-2 flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full jiohotstar-gradient text-white text-label-sm font-bold uppercase tracking-wider">Multi-Gen Pick</span>
+<span class="text-slate-400 font-label-sm text-label-sm">2h 14m • Hindi, Tamil, Telugu</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white font-extrabold">Hanuman: The Awakening</h3>
+<div class="flex items-center gap-2 text-slate-300 text-label-sm">
+<span class="px-2 py-0.5 rounded bg-white/[0.08] text-white font-semibold">U/A 7+</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.08] text-[#00A8FF] font-bold">IMDb 8.7</span>
+<span class="px-2 py-0.5 rounded bg-white/[0.08] text-white font-semibold">Dolby 5.1</span>
+</div>
+<p class="font-body-md text-body-md text-slate-300 line-clamp-3 leading-relaxed">
+                An ordinary young villager inadvertently discovers celestial powers embedded in an ancient gem. He must harness righteousness and courage to protect his family and village from a dark corporate threat.
+              </p>
+<!-- Audio & Subtitles Indicators -->
+<div class="flex items-center gap-2 pt-2 text-label-sm text-slate-400">
+<span class="material-symbols-outlined text-[16px] text-[#00A8FF]">subtitles</span>
+<span>Subtitles: English, Hindi, Tamil</span>
+<span class="mx-1 text-slate-600">•</span>
+<span class="material-symbols-outlined text-[16px] text-[#D946EF]">volume_up</span>
+<span>Audio: 6 Languages Available</span>
+</div>
+</div>
+</div>
+<!-- Glassmorphic Match Transparency Tooltip Pill -->
+<div class="p-4 rounded-2xl bg-[#050811]/80 border border-white/[0.08] backdrop-blur-xl flex items-start gap-3 shadow-inner">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00A8FF]/20 to-[#7C3AED]/20 border border-[#00A8FF]/30 flex items-center justify-center flex-shrink-0 text-[#00A8FF]">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-white font-bold">Match Score Rationale: 96% Match</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span class="font-label-sm text-label-sm text-emerald-400 font-semibold">Zero Violence Confirmed</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-300 mt-0.5">
+                Recommended based on your family viewing history (Animation, Indian Mythology, Superhero Drama) and your active "Family Night" mood filter.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Decision Filter Widget Column -->
+<div class="lg:col-span-4 rounded-3xl bg-[#0d1322] border border-white/[0.08] p-6 flex flex-col justify-between gap-6 shadow-xl">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-white">Decision Stopwatch</span>
+<span class="px-2.5 py-1 rounded-full bg-white/[0.08] border border-white/[0.1] text-[#00A8FF] font-bold font-label-sm text-label-sm">01:42 Left</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-slate-400">
+<span>Goal: Start Watching in &lt; 2 mins</span>
+<span class="text-[#00A8FF] font-bold">85% Complete</span>
+</div>
+<!-- Progress Bar with JioHotstar Gradient -->
+<div class="w-full h-2 rounded-full bg-white/[0.08] overflow-hidden">
+<div class="h-full rounded-full jiohotstar-gradient w-[85%] shadow-[0_0_12px_rgba(0,168,255,0.5)]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-white font-semibold">Who is watching right now?</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center gap-2 p-2.5 rounded-xl bg-white/[0.06] border border-white/[0.08] hover:border-[#00A8FF]/40 text-left transition-all">
+<div class="w-7 h-7 rounded-full bg-[#0077FE] flex items-center justify-center text-white font-bold text-xs shadow-md">P</div>
+<div class="flex flex-col truncate">
+<span class="text-xs font-bold text-white">Parents (2)</span>
+<span class="text-[10px] text-slate-400">Full Access</span>
+</div>
+</button>
+<button class="flex items-center gap-2 p-2.5 rounded-xl bg-[#D946EF]/15 border border-[#D946EF]/30 text-left transition-all">
+<div class="w-7 h-7 rounded-full bg-[#D946EF] flex items-center justify-center text-white font-bold text-xs shadow-[0_0_8px_#D946EF]">K</div>
+<div class="flex flex-col truncate">
+<span class="text-xs font-bold text-[#f5d0fe]">Kids (Age 8 &amp; 11)</span>
+<span class="text-[10px] text-pink-300">Safe Filter ON</span>
+</div>
+</button>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center gap-3">
+<span class="material-symbols-outlined text-[#00A8FF] text-[24px]">volume_off</span>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-white">Auto-Mute Spoilers &amp; Ads</span>
+<span class="text-[11px] text-slate-400">Seamless background while kids settle down</span>
+</div>
+</div>
+</div>
+<button class="w-full py-3.5 rounded-2xl jiohotstar-gradient hover:opacity-95 text-white font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(124,58,237,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px]">shuffle</span>
+<span>Surprise Family With Instant Pick</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CONTENT RAIL 3: LIVE SPORTS & CRICKET PULSE -->
+<section class="w-full px-6 lg:px-10 py-6">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2.5">
+<span class="text-xl">🏏</span>
+<h2 class="font-headline-md text-headline-md text-white font-bold">Live Sports &amp; Cricket Pulse</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-[#FF0080] text-white font-bold text-label-sm shadow-[0_0_12px_rgba(255,0,128,0.6)] animate-pulse">LIVE BROADCAST</span>
+</div>
+<a class="font-label-md text-label-md text-[#00A8FF] hover:text-white flex items-center gap-1 transition-colors" href="#">
+<span>View Match Center</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Broadcast Widescreen Card & Mini Sports Rails -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+<!-- Primary Live Cricket Broadcast 16:9 Showcase -->
+<div class="lg:col-span-8 group relative rounded-3xl overflow-hidden bg-[#0d1322] border border-white/[0.08] shadow-2xl">
+<div class="relative w-full aspect-video md:aspect-[16/8] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Electrifying packed cricket stadium at night during ICC World Cup under towering floodlights with batsman hitting powerful lofted boundary shot, vivid green pitch, excited cheering crowd in stadium tiers with blue jersey flags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC8JWrOrvI0kyoRKZ7uCBPUAy4xn2TZrrL5pg0eAzzl54AayKs7Ty6jDxzyPkebSJr2Yqyi_ipIsTOOisn_YtyN9x1HCm8VvL4bhO1Yw-tx3lYqD4TAH7ppYqMp_BsnuNfAtptFn4sZx9OBJnDQoowxkMK1jcKRuvpnZ5oPnV-DaMa0qHYgivzbIL_XKnoHOY2PMtuyfPoX5I29PlEVcO63cPMOAxlH5qAiPKBLcs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#070B16] via-[#070B16]/40 to-transparent"></div>
+<!-- Live Score Ribbon Floating Over Broadcast -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+<div class="flex items-center gap-3 px-4 py-2 rounded-xl bg-[#050811]/90 border border-white/[0.1] backdrop-blur-md shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-[#FF0080] animate-ping shadow-[0_0_8px_#FF0080]"></span>
+<span class="font-label-md text-label-md text-white font-extrabold tracking-wide">ICC MEN'S T20 SUPER 8</span>
+</div>
+<div class="px-3 py-1.5 rounded-xl bg-[#050811]/90 border border-white/[0.1] backdrop-blur-md text-[#00A8FF] font-bold text-label-sm">
+              4K 50fps HDR
+            </div>
+</div>
+<!-- Bottom Live Score Overlay -->
+<div class="absolute bottom-4 left-4 right-4 flex flex-col md:flex-row md:items-end justify-between gap-4 z-10">
+<!-- Teams & Current Tally -->
+<div class="flex flex-col gap-1 p-4 rounded-2xl bg-[#050811]/90 border border-white/[0.1] backdrop-blur-xl shadow-xl">
+<div class="flex items-center gap-4">
+<!-- Team India -->
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-[#0077FE] flex items-center justify-center text-[10px] font-bold text-white shadow-md">IND</div>
+<span class="font-headline-sm text-headline-sm text-white font-extrabold">178/4</span>
+<span class="text-xs text-slate-400 font-medium">(16.4 ov)</span>
+</div>
+<span class="text-slate-500 font-bold">vs</span>
+<!-- Team England -->
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-rose-600 flex items-center justify-center text-[10px] font-bold text-white shadow-md">ENG</div>
+<span class="text-slate-300 font-label-md text-label-md">Yet to bat</span>
+</div>
+</div>
+<span class="text-xs text-[#00A8FF] font-semibold">S. Yadav 64* (28b) • H. Pandya 22* (11b) • Current RR: 10.68</span>
+</div>
+<!-- Action: Multicam Quick Switch with Signature Gradient -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 px-5 py-3 rounded-xl jiohotstar-gradient text-white font-bold font-label-md text-label-md shadow-[0_0_24px_rgba(0,168,255,0.4)] hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">videocam</span>
+<span>Multicam Stream</span>
+</button>
+<button class="p-3 rounded-xl bg-white/[0.08] hover:bg-white/[0.14] border border-white/[0.1] text-white backdrop-blur-md transition-all">
+<span class="material-symbols-outlined text-[20px]">equalizer</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Up Next Sports Grid Column -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<!-- Live Card 2: Premier League -->
+<div class="group p-4 rounded-2xl bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 transition-all flex items-center gap-4 cursor-pointer">
+<div class="relative w-28 aspect-video rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Premier League football match evening game with vibrant green turf, bright stadium floodlights, player kicking ball with velocity blur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFUCWeyELcIf5IyzpZ3xtQPUKmBYmp9MXJrnq4Y0gU0tjF1vOXnk5BNbajA3naZ4E-Zd4w4rM87FJFGOyr8yWyd7ZIrxfYLmyCTOPvqcPvGhJcIj7iLmueaK-NWtdXQ2HpE3TElI18wAxmu6SDla8osRnWJFplZFhHUMWSB2LTNRiGz-9AHdUTs_Qk0vet08ZCD-a7SeRLdOSofgM2CB6kgSrT8Iajj-17GjI53M0"/>
+<div class="absolute top-1 left-1 px-1.5 py-0.2 rounded bg-[#FF0080] text-white text-[9px] font-bold shadow-[0_0_8px_#FF0080]">LIVE</div>
+</div>
+<div class="flex flex-col gap-1 min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-slate-400 font-bold">Premier League</span>
+<span class="text-[11px] text-emerald-400 font-bold">78' Min</span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Arsenal vs Chelsea</h4>
+<span class="text-xs text-[#00A8FF] font-semibold">2 - 1 • Emirates Stadium</span>
+</div>
+</div>
+<!-- Live Card 3: Formula 1 -->
+<div class="group p-4 rounded-2xl bg-[#0d1322] border border-white/[0.06] hover:border-[#D946EF]/40 transition-all flex items-center gap-4 cursor-pointer">
+<div class="relative w-28 aspect-video rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Formula 1 night grand prix race under luminous track floodlights with sleek racing car spitting sparks on asphalt straight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ5akAOgjSy6hnXRj8pQ-73Uaeyzx8Q6KTWo3m5RivC8FV8vOunioMBybaO7_UFj2qn3XPACPJKK--8q2tbXbcx0S0R1KJEuvvzox3yJNjb560uQBrxFUjvsOruik9ihHS2sPbT8HZqSo_jcudRpL8uNvyOMfeXwVoTjwQV7Jd9e1ynZZAEEvM4h3BmQ5G3uVTCoU4B946jl8wtoKt2DEZ-G0TBadm69jHrMdgo1Q"/>
+<div class="absolute top-1 left-1 px-1.5 py-0.2 rounded bg-white/[0.1] text-white text-[9px] font-bold">Starts 8 PM</div>
+</div>
+<div class="flex flex-col gap-1 min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-slate-400 font-bold">F1 Qualifying</span>
+<span class="text-[11px] text-slate-400">Singapore GP</span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Marina Bay Street Circuit</h4>
+<span class="text-xs text-[#D946EF] font-semibold">Pre-Race Analysis Live</span>
+</div>
+</div>
+<!-- Live Card 4: Pro Kabaddi -->
+<div class="group p-4 rounded-2xl bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 transition-all flex items-center gap-4 cursor-pointer">
+<div class="relative w-28 aspect-video rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="High energy Pro Kabaddi match raid with athlete diving for the touchline amidst dynamic dust and bright arena spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpthbEX1snRkGaXKlD8-R2wvNxGgVEwKQUgajDu51xZ5MzIjhRSebak3Q7oCoNLo_WqiA0Isc9Y565G9VQT71y7WbL3Fjys-gJVUEQ745CULTxnd8MYxvbffWf5xDaBCl35hFV6C68rdn9iMgG6PJUS_omzSUqgYav7jzEFCBtuTlPstcHfrIyd2ElcLxNJccp0snoEsAgfq1BSfyfYcXRCBT5kbP5hVH9fHNtg5A"/>
+<div class="absolute top-1 left-1 px-1.5 py-0.2 rounded bg-[#FF0080] text-white text-[9px] font-bold shadow-[0_0_8px_#FF0080]">LIVE</div>
+</div>
+<div class="flex flex-col gap-1 min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-slate-400 font-bold">Pro Kabaddi</span>
+<span class="text-[11px] text-emerald-400 font-bold">Half-Time</span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Puneri Paltan vs Bulls</h4>
+<span class="text-xs text-[#00A8FF] font-semibold">Score: 24 - 19</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTENT RAIL 4: CONTINUE WATCHING (Under 45 Mins Left) -->
+<section class="w-full px-6 lg:px-10 pt-4 pb-14">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2.5">
+<span class="text-xl">⏱️</span>
+<h2 class="font-headline-md text-headline-md text-white font-bold">Continue Watching (Under 45 Mins Left)</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-white/[0.08] text-slate-300 font-label-sm text-label-sm font-semibold">Finish before bedtime</span>
+</div>
+<button class="font-label-md text-label-md text-slate-400 hover:text-white flex items-center gap-1 transition-colors">
+<span>Edit List</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Resume Card 1 -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-md hover:shadow-xl transition-all cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intense spy espionage thriller scene featuring Kay Kay Menon in sleek modern office command center with tactical monitors and high-tech maps, cinematic dark teal and amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7BZfHYg4DSarRnq7wylklmTjeHp2gAHMZjuDfxco7XEfyqnf0N-r9RRUPnlqdxYV9b2-pkvGm5huCWOheO4-UqIKsw8jMMjyNaxJpZsSFWqqGqYJrHHD7rV8wX-wUzyrq_lEkCxKcvTJWqheyiM1oRo5LcIly43GSela6JBkZriE2pBsOYZHd-qPvTRLumOH9mYLIdEh4C1MjhxmpHEScEOOSIsWarFS8i6t33Cc"/>
+<div class="absolute inset-0 bg-[#070B16]/30"></div>
+<div class="absolute bottom-2 left-2.5 flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-bold text-[10px]">
+            🟢 99% Family Match
+          </div>
+<!-- Play Disc with Gradient -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#070B16]/50">
+<div class="w-10 h-10 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Scrubber Progress Bar with Gradient -->
+<div class="w-full h-1 bg-white/[0.08]">
+<div class="h-full jiohotstar-gradient w-3/4"></div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Special OPS 1.5</h4>
+<span class="text-xs text-[#00A8FF] font-bold">18m left</span>
+</div>
+<span class="text-xs text-slate-400">S1 : E4 • The Traitor's Trail</span>
+</div>
+</div>
+<!-- Resume Card 2 -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-md hover:shadow-xl transition-all cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Whimsical Pixar animated blue sea creature and friend jumping joyfully out of crystal turquoise Italian Riviera ocean water, bright summer Mediterranean sunshine, colorful coastal town in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLAI3bEG_YF4N8vAgxyd3Haf8rjlKOYEfZ_p69g82iXycC-a1_f4xa7cwPRI7U7y32omPY-wAFhzu4rLyaGFk2T-nYwOnblcZVtlQ4QKMydu-iDtqDxhIRxhMM9pfYG4BVPbuzCw-8MEXM9GmojbmwQDd0FWt7ujRDy3idkl6G2V1R5nk8qd8A71XhJGdlL1Coem1eNHh46ZKzX_HrM7mDxV4ZZl0Xvz_PjrkfSiA"/>
+<div class="absolute inset-0 bg-[#070B16]/30"></div>
+<div class="absolute bottom-2 left-2.5 flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-bold text-[10px]">
+            🟢 98% Family Match
+          </div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#070B16]/50">
+<div class="w-10 h-10 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="w-full h-1 bg-white/[0.08]">
+<div class="h-full jiohotstar-gradient w-4/5"></div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Luca (Disney Pixar)</h4>
+<span class="text-xs text-[#00A8FF] font-bold">22m left</span>
+</div>
+<span class="text-xs text-slate-400">Kids favorite • English &amp; Hindi</span>
+</div>
+</div>
+<!-- Resume Card 3 -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-md hover:shadow-xl transition-all cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Masterchef kitchen arena with steam rising from gourmet dishes under bright television studio studio lighting, high precision plating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu1oxFwlLfaEAiS1rXbjexrqttfTrVmmcovMPDKQbtnVXTJfRh92K7AmypfIeGAUbsXkJudsj8QWO_qpe_Bbq8BAShUl-dJFAdY8x107GEfgp0M28EPN9aw74rdavVC2pnoh-q8vz7LCqiZvcqJmZtc0KhF5CtfhULgsF7UiU3GdatSBp9_1RN_q5bDX_tZ692tAAZHhlj4pcrtU-WNUt_RH4zXZpfYaRsqvHnbOw"/>
+<div class="absolute inset-0 bg-[#070B16]/30"></div>
+<div class="absolute bottom-2 left-2.5 flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-bold text-[10px]">
+            🟢 93% Family Match
+          </div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#070B16]/50">
+<div class="w-10 h-10 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="w-full h-1 bg-white/[0.08]">
+<div class="h-full jiohotstar-gradient w-1/2"></div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-white truncate">MasterChef India</h4>
+<span class="text-xs text-[#00A8FF] font-bold">28m left</span>
+</div>
+<span class="text-xs text-slate-400">S8 : E12 • The Immunity Pin</span>
+</div>
+</div>
+<!-- Resume Card 4 -->
+<div class="group relative rounded-2xl overflow-hidden bg-[#0d1322] border border-white/[0.06] hover:border-[#00A8FF]/40 shadow-md hover:shadow-xl transition-all cursor-pointer">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Epic cinematic documentary wide angle of lush Indian Western Ghats rainforest with morning mist and wild elephants walking in golden dawn light, BBC planet earth style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwv4xoXyRJlw10lj3c2RotOnqH3c4YvAPffbajtr3ds4wAtwdUuyftzj18PudJFGeaV_PKXm_Oqca8xvzFlm_o5rz4-vZSOcsfO7J6LSxE50uJyqn_OU_5-0ZlkQR--xuEAJawHycbq_EOXQYlnKufTwzR9YGaRuwQnEgywB8_q7Of1NuYqDaJu-qQpZrLAQWfd-_aYlyMPS8_F8IltOSq_uVOUFxwEebcmcPWZIM"/>
+<div class="absolute inset-0 bg-[#070B16]/30"></div>
+<div class="absolute bottom-2 left-2.5 flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-bold text-[10px]">
+            🟢 95% Family Match
+          </div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#070B16]/50">
+<div class="w-10 h-10 rounded-full jiohotstar-gradient flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="w-full h-1 bg-white/[0.08]">
+<div class="h-full jiohotstar-gradient w-2/3"></div>
+</div>
+<div class="p-3.5 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-white truncate">Wild Karnataka</h4>
+<span class="text-xs text-[#00A8FF] font-bold">14m left</span>
+</div>
+<span class="text-xs text-slate-400">Narrated in English &amp; Hindi</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER TRUST & MULTI-TASKING PARENT GUARANTEE BANNER -->
+<section class="w-full px-6 lg:px-10 pb-12">
+<div class="p-6 rounded-3xl bg-[#0c1222] border border-white/[0.08] backdrop-blur-xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+<!-- Brand Lockup with Clean Vector Emblem matching Reference Image -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 100 100">
+<polygon fill="url(#goldEdge)" points="50,4 56,38 96,28 62,49 84,82 52,60 22,86 38,50 8,42 42,38"></polygon>
+<polygon fill="#FFFFFF" points="50,6 54,39 50,48 44,39"></polygon>
+<polygon fill="#CBD5E1" points="94,29 61,48 50,48 55,39"></polygon>
+<polygon fill="#E2E8F0" points="82,80 52,58 50,48 61,48"></polygon>
+<polygon fill="#94A3B8" points="23,84 40,51 50,48 52,58"></polygon>
+<circle cx="50" cy="48" fill="#FFFFFF" r="3"></circle>
+</svg>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-white">Jio<span class="text-white">Hotstar</span></span>
+</div>
+<div class="h-8 w-px bg-white/[0.1] hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-white font-bold">Parental Peace-of-Mind Engine Active</span>
+<span class="font-body-sm text-body-sm text-slate-400">Instant 2-minute decision algorithms tailored for multi-viewer harmony.</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-3">
+<button class="px-5 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.08] text-white font-label-sm text-label-sm font-semibold transition-all">
+          Manage Family Profiles
+        </button>
+<button class="px-5 py-2.5 rounded-xl jiohotstar-gradient text-white font-label-sm text-label-sm font-bold shadow-[0_0_20px_rgba(217,70,239,0.4)] hover:opacity-95 transition-all">
+          Bedtime Timer: 10:30 PM
+        </button>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
